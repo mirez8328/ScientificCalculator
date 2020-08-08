@@ -1,24 +1,24 @@
-var pointflag = false; //যাতে দশমিক একসাথে একটার বেশী না দেয়া যায়
-var addFlag = false; //যাতে একসাথে একটার বেশি প্লাস সাইন দেয়া না যায়
-var subFlag = false; //যাতে একসাথে একটার বেশি মাইনাস সাইন দেয়া না যায়
-var multiplyFlag = false; //যাতে একসাথে একটার বেশি গুণ সাইন দেয়া না যায়
-var divFlag = false; //যাতে একসাথে একটার বেশি প্লাস ভাগ দেয়া না যায়
-var percentageFlag = false; //
-var operatorFlag = false; //সর্বশেষ পেসকৃত বাটনটি কোন অপারেটর ছিল না নাম্বার ছিল তা জানার জন্য কিনা
-var operatorFlag2 = false; //একের অধিক অপারেশন এর জন্য প্রিভিয়াস অপারেটর ক্যালকুলেট করার জন্য 
-var OF2Value = ''; //সর্বশেষ অপারেশন এর সাইন জানার জন্য
-var check = false; //অপারেটর এর মাধ্যমে একের অধিক ক্যালকুলেট করার জন্য
-var check2 = false; //অপারেটর এর মাধ্যমে ক্যালকুলেট করার পর রেজাল্ট শোতে একাধিক ডিজিট ব্যবহার এর জন্য
-var calculation = 0; //ক্যালকুলেট করার জন্য ভ্যরিয়েবল
-var count = 0; // একের অধিক অপারেটর ইউজ এর হিসাব রাখে
-var sqrtFlag = false; //sqrtFlag একসাথে একের অধিক sqrtFlag ফাংশান ইউজ করতে দেয় না
-var modulusFlag = false; //modulusFlag একসাথে একের অধিক modulus ফাংশান ইউজ করতে দেয় না
-var modulusFlag2 = false; //modulusFlag2 true এর পর অপারেটরস/ইকুয়েল ক্লিক করলে modulusFlag2 true এর কন্ডিশনে ঢুকবে
-var modulusDividend = 0; //modulusDividend ইনপুট থেকে Divident কে সেভ করে রাখে। modulusFlag এবং modulusFlag2 true করে
-var powerBase = 0; // powerBase প্রথমে ইনপুট ফিল্ড থেকে ইনপুট নিয়ে powerBase রাখে এবং powerFlag true করে
-var powerFlag = false; //powerFlag true এর পর অপারেটরস/ইকুয়েল ক্লিক করলে powerFlag true এর কন্ডিশনে ঢুকবে
-var yrootBase =0 ; // yrootBase প্রথমে ইনপুট ফিল্ড থেকে ইনপুট নিয়ে yrootBase রাখে এবং yrootFlag true করে
-var yrootFlag = false; //yrootFlag true এর পর অপারেটরস/ইকুয়েল ক্লিক করলে yrootFlag true এর কন্ডিশনে ঢুকবে
+var pointflag = false; 
+var addFlag = false; 
+var subFlag = false; 
+var multiplyFlag = false; 
+var divFlag = false; 
+var percentageFlag = false; 
+var operatorFlag = false; 
+var operatorFlag2 = false; 
+var OF2Value = ''; 
+var check = false; 
+var check2 = false; 
+var calculation = 0; 
+var count = 0; 
+var sqrtFlag = false; 
+var modulusFlag = false; 
+var modulusFlag2 = false; 
+var modulusDividend = 0; 
+var powerBase = 0;
+var powerFlag = false;
+var yrootBase =0 ; 
+var yrootFlag = false; 
 
 /* Operation */
 function Addition(){
@@ -1304,18 +1304,18 @@ function Calculate(){
 
 // menu js
 
-//সাইডবার অন করা জন্য
+
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
 }
 
-//সাইডবার অফ করার জন্য
+
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
 
 
-//সাইন্টেফিক ক্যালকুলেটর অফ হয়ে স্ট্যান্ডার্ড ক্যালকুলেটর অন হবে
+
 function standard() {
     var x = document.querySelectorAll(".scientific");
     for(var i=0 ; i<x.length ; i++){
@@ -1336,7 +1336,7 @@ function standard() {
     document.getElementById("mySidenav").style.width = "0";
 }
 
-//স্ট্যান্ডার্ড ক্যালকুলেটর অফ হয়ে সাইন্টেফিক ক্যালকুলেটর অন হবে
+
 function scientific() {
     var x = document.querySelectorAll(".scientific");
     for(var i=0 ; i<x.length ; i++){
