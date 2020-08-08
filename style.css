@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    background-color: rgba(168,168,168,.1);
+}
+
+.card{
+    justify-content: left;
+    width: 95%;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    font-size: 0;
+    margin: 10px auto;
+}
+
+.card:hover{
+    box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2);
+}
+
+.calc-head #result2{
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    text-align: right;
+    padding: 12px 5px;
+    letter-spacing: 2px;
+    border: none;
+    resize: none;
+    box-sizing: border-box;
+    background-color: rgba(168,168,168,.1);
+}
+
+.calc-head #result{
+    width: 100%;
+    height: 60px;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: right;
+    padding: 6px 5px;
+    letter-spacing: 2px;
+    border: none;
+    resize: none;
+    box-sizing: border-box;
+    background-color: rgba(168,168,168,.1);
+}
+
+.calc-body .row{
+    width: 100%;
+    height: 90px;
+}
+
+.btn{
+    height: 100%;
+    width: 20%;
+    font-size: 24px;
+    background-color: rgba(168,168,168,.2);
+    color: black;
+    box-sizing: border-box;
+    border: 0;
+    float: left;
+}
+
+.btn:hover{
+    background-color: darkgray;
+}
+
+.digit{
+    color: black;
+    font-weight: bold;
+    background-color: rgba(168,168,168,.5);
+}  
+
+
+/* nav bar */
+.wrap{
+    display: block;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(238,238,238);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+  
+.sidenav a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+  
+.sidenav a:hover {
+    background-color: rgba(168,168,168,.4);
+    cursor: pointer;
+}
+  
+.sidenav .closebtn {
+    position: absolute;
+    top: 5px;
+    right: 25px;
+    font-size: 50px;
+    margin-left: 50px;
+    padding: 0 10px;
+}
+
+.sidenav .closebtn:hover{
+    background-color: rgba(168,168,168,.7);
+}
+
+.nav{
+    font-size:30px;
+    cursor: pointer;
+    padding: 8px 10px;
+    width: 10px;
+}
+
+.nav:hover{
+   background-color: rgba(168,168,168,.7);
+}
+
+.text{
+    font-size:30px;
+    margin: 0 0 10px 40px;
+    color: brown;
+}
+
+.TopHeading{
+    text-align: center;
+    color: blueviolet;
+    font-size: 30px;
+    width: 95%;
+    float: right;
+    margin-right: 20px;
+}
+
+.show{
+    display: none;
+}
+
+.calc-body .scientific{
+    display: none;
+}
